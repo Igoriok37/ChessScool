@@ -1,0 +1,21 @@
+.progress {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @include mobile {
+      row-gap: 0;
+    }
+  }
+
+
+  &__list {
+    gap: 2rem;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+  }
+}

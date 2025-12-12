@@ -1,0 +1,23 @@
+.presentation {
+  &__inner {
+    background-image: url(../../images/presentation-bg.jpg);
+    background-size: cover;
+    height: 56.25rem;
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+
+    @include mobile {
+      height: 50.75rem;
+    }
+  }
+
+  &__inner {
+    &::after {
+      background: rgba(16, 20, 30, .6);
+      content: '';
+      display: block;
+      height: 100%;
+    }
+  }
+}

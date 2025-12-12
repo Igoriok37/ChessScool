@@ -1,0 +1,15 @@
+.section {
+  padding-block: var(--section-padding-y);
+
+  &--hidden-x {
+    overflow-x: hidden;
+  }
+
+  &--hidden-y {
+    overflow-y: hidden;
+  }
+
+  &--no-padding {
+    padding-block: 0;
+  }
+}

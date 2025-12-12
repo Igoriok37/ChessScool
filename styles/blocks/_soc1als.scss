@@ -1,0 +1,9 @@
+.soc1als {
+  display: flex;
+  justify-content: center;
+  
+  &__list {
+    display: flex;
+    column-gap: 0.7em;
+  }
+}

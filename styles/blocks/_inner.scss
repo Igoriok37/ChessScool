@@ -1,0 +1,22 @@
+.inner {
+  display: flex;
+  column-gap: 5rem;
+  align-items: center;
+  
+
+  &--center {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  @include desktop-s {
+    flex-direction: column;
+    
+  }
+
+  @include mobile {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}    

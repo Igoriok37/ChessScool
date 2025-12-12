@@ -1,0 +1,50 @@
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+.container-x {
+  width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-left: 5rem;
+
+  @include mobile {
+    padding-left: 0;
+  }
+}
+
+.container-header {
+  max-width: 85rem;
+  margin-inline: auto;
+  
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.hidden-tablet {
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.vizible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
+
+.vizible-tablet {
+  @include tablet-above {
+    display: none !important;
+  }
+}

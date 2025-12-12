@@ -1,0 +1,27 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  width: 100%;
+  max-width: 24.65rem;
+
+  @include mobile {
+    row-gap: 1.2rem;
+  }
+
+  &__name {
+    @include fluid-text(20, 16)
+  }
+
+  &__post{
+    margin-bottom: 1rem;
+
+    @include mobile {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+.gallery {
+  --heroGalleryHeightOffsetY: 9rem;
+  --heroGalleryHeightItem: 20.75rem;
+  --heroGalleryRowGap: 1rem;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 19.5rem);
+    gap: 1rem;
+    height: calc(var(--heroGalleryHeightItem) * 3 + var(--heroGalleryRowGap) * 3);
+    margin-top: calc(var(--heroGalleryHeightOffsetY) * -1);
+    overflow-x: hidden;
+  
+    @include mobile {
+      --heroGalleryHeightOffsetY: 5rem;
+      --heroGalleryHeightItem: 10rem;
+      grid-template-columns: repeat(2, 10rem);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: start;
+
+    &:nth-child(2n) {
+      align-items: end;
+      margin-bottom: calc(var(--heroGalleryHeightOffsetY) * -1);
+    }
+  }
+}
